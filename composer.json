@@ -1,0 +1,42 @@
+{
+    "name": "oskarstark/behat-contexts",
+    "type": "library",
+    "description": "some helpful Behat contexts",
+    "keywords": [
+        "BDD",
+        "Behat",
+        "Symfony2",
+        "Context",
+        "Doctrine",
+        "Alice"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oskar Stark",
+            "email": "oskarstark@googlemail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "behat/behat": "^3.0",
+        "behat/mink-extension": "^2.3",
+        "behat/symfony2-extension": "^2.1",
+        "theofidry/alice-data-fixtures": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.13",
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^6.0 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OStark\\Behat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\OStark\\Behat\\": "tests/"
+        }
+    }
+}
