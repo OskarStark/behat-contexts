@@ -22,5 +22,5 @@ Given I empty the database
 ```
 
 ```gherkin
-Then I should have 2 App\Entity\Category entities
+Then I should have 2 "App\Entity\Category" entities
 ```
