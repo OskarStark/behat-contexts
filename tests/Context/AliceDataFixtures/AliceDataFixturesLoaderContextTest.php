@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Behat\Context\AliceDataFixtures;
+namespace Tests\OStark\Behat\Context\AliceDataFixtures;
 
 use Behat\Gherkin\Node\TableNode;
 use Fidry\AliceDataFixtures\LoaderInterface;

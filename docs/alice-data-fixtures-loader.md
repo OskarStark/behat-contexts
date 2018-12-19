@@ -8,12 +8,9 @@ default:
     suites:
         default:
             contexts:
-                - App\Behat\Context\AliceDataFixtures\AliceDataFixturesLoaderContext:
+                - OStark\Behat\Context\AliceDataFixtures\AliceDataFixturesLoaderContext:
                     loader: '@fidry_alice_data_fixtures.loader.doctrine'
                     fixturesBasePath: '%paths.base%/features/fixtures/'
-
-                # make sure to enable MinkContext!
-                - Behat\MinkExtension\Context\MinkContext
 ```
 
 ## Available steps
