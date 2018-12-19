@@ -20,11 +20,11 @@ default:
 
 ```gherkin
 Given the following YAML fixtures where loaded:
-"""
-App\Entity\Category:
-    category_1:
-        name: "Foo"
-"""
+    """
+    App\Entity\Category:
+        category_1:
+            name: 'Foo'
+    """
 ```
 
 ```gherkin
