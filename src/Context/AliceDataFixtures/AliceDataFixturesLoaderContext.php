@@ -38,7 +38,7 @@ class AliceDataFixturesLoaderContext implements Context
         Yaml::parse($fixturesYaml->getRaw());
 
         file_put_contents(
-            $filename = sprintf(
+            $filepath = sprintf(
                 '%s/%s.yaml',
                 sys_get_temp_dir(),
                 uniqid('yaml_fixtures')
@@ -46,7 +46,7 @@ class AliceDataFixturesLoaderContext implements Context
             $fixturesYaml->getRaw()
         );
 
-        $this->loader->load([$filename]);
+        $this->loader->load([$filepath]);
     }
 
     /**
