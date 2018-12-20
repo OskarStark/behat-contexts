@@ -61,7 +61,7 @@ class DoctrineDatabaseContext implements Context
     }
 
     /**
-     * @Then I should have :count ":class" entities
+     * @Then /^I should have ([^"]*) "([^"]*)" entities$/
      */
     public function iShouldHaveEntities($count, $class)
     {
